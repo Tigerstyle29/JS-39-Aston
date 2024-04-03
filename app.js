@@ -1,5 +1,5 @@
 function helloWorld() {
-    console.log("Hello, World!")
+    console.log("Hello, World! Hello World! Hello World!")
 }
 
 // Вызов функции
