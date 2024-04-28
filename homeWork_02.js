@@ -38,34 +38,34 @@ const makeCounter = function Counter() {}
 // Бонус
 // Задание 1. Написать функцию глубокого сравнения двух объектов:
 
-const obj1 = { here: { is: "on", other: "3" }, object: "Y" };
-const obj2 = { here: { is: "on", other: "2" }, object: "Y" };
-const deepEqual = (obj1, obj2) => {
-    if (typeof obj1 !== 'object' || typeof obj2 !== 'object' || obj1 === null || obj2 === null) {
-        return obj1 === obj2;
-    }
+// const obj1 = { here: { is: "on", other: "3" }, object: "Y" };
+// const obj2 = { here: { is: "on", other: "2" }, object: "Y" };
+// const deepEqual = (obj1, obj2) => {
+//     if (typeof obj1 !== 'object' || typeof obj2 !== 'object' || obj1 === null || obj2 === null) {
+//         return obj1 === obj2;
+//     }
 
-    const keys1 = Object.keys(obj1);
-    const keys2 = Object.keys(obj2);
+//     const keys1 = Object.keys(obj1);
+//     const keys2 = Object.keys(obj2);
 
-    if (keys1.length !== keys2.length) {
-        return false;
-    }
+//     if (keys1.length !== keys2.length) {
+//         return false;
+//     }
 
-    for (let key of keys1) {
-        if (!deepEqual(obj1[key], obj2[key])) {
-            return false;
-        }
-    }
-    // Если все свойства совпадают, объекты равны
-    return true;
-};
+//     for (let key of keys1) {
+//         if (!deepEqual(obj1[key], obj2[key])) {
+//             return false;
+//         }
+//     }
+//     // Если все свойства совпадают, объекты равны
+//     return true;
+// };
 
-// Пример использования
-const obj1 = { here: { is: "on", other: "3" }, object: "Y" };
-const obj2 = { here: { is: "on", other: "2" }, object: "Y" };
+// // Пример использования
+// const obj1 = { here: { is: "on", other: "3" }, object: "Y" };
+// const obj2 = { here: { is: "on", other: "2" }, object: "Y" };
 
-console.log(deepEqual(obj1, obj2)); // Выведет false
+// console.log(deepEqual(obj1, obj2)); // Выведет false
 
 // Задание 2. Развернуть строку в обратном направлении при помощи методов массивов:
 
